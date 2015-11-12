@@ -4,4 +4,8 @@ class StaticPagesController < ApplicationController
 
   def mycollection
   end
+  
+  def about
+  end
+  
 end
