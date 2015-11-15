@@ -46,3 +46,5 @@ gem 'guard-minitest'
 
 #gem for propper bootstrap support
 gem 'bootstrap-sass'
+
+gem 'rails_12factor'
