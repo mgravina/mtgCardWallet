@@ -48,3 +48,6 @@ gem 'guard-minitest'
 gem 'bootstrap-sass'
 
 gem 'rails_12factor'
+
+#gem for password encryption
+gem 'bcrypt'
