@@ -45,9 +45,17 @@ gem 'guard'
 gem 'guard-minitest'   
 
 #gem for propper bootstrap support
-gem 'bootstrap-sass'
+gem 'bootstrap-sass',       '3.2.0.0'
 
 gem 'rails_12factor'
 
 #gem for password encryption
 gem 'bcrypt'
+
+#gem for debugger in deployment
+group :development, :test do
+
+  gem 'byebug'
+
+end
+
