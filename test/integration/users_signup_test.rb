@@ -25,6 +25,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     assert_template 'static_pages/mycollection'
     assert_not flash.nil?
+	assert is_logged_in?
   end
   
   
