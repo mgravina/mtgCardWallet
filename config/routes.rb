@@ -2,13 +2,15 @@ Rails.application.routes.draw do
 
   root 				'static_pages#home'
   get 'about' => 'static_pages#about'
-  get 'mycollection' => 'static_pages#mycollection'
+  get 'demo' => 'static_pages#demo'
   get 'contact' => 'static_pages#contact'
   get 'signup' => 'users#new'
+  #get 'mycollection' => 'mycollections#show'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
   resources :users
+  resources :mycollections
 
   
   

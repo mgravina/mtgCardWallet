@@ -7,10 +7,10 @@ class StaticPagesControllerTest < ActionController::TestCase
 	assert_select "title", "Home | mtgCardWallet.com"
   end
 
-  test "should get mycollection" do
-    get :mycollection
+  test "should get demo" do
+    get :demo
     assert_response :success
-	assert_select "title", "My Collection | mtgCardWallet.com"
+	assert_select "title", "My Collection Demo | mtgCardWallet.com"
   end
   
     test "should get about" do
