@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+belongs_to :collection
+
   attr_accessor :remember_token
 
 #ensure that all entries are saved as lowercase

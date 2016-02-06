@@ -4,6 +4,8 @@ class MycollectionsController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+#    @mycollection = Collectionsdetail.where(:Collectionsdetail.collection.user_id => (params[:id]))
+#	@magiccards = Magiccard.where(:cardid => Magic_collection.where(:UserID => (params[:id])).Magiccard_cardID)
   end
 
     private

@@ -1,7 +1,10 @@
 <% provide(:title, "My Collection") %>
 
-    <h1>My Collection</h1>
-	
-	<p>
-    My Collection will be displayed here
-	</p>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+  
+  
+
+	<br>
+    <p>Member since: <%= @user.created_at.to_date.to_formatted_s(:long)  %><p>
+  </div>
