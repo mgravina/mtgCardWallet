@@ -15,3 +15,18 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function() {
+  $('[rel="popover"]').popover({
+    trigger: 'hover',
+  });
+});
+
+
+$(document).on('page:load', function() {
+    $('[rel="popover"]').popover({
+    trigger: 'hover',
+  });
+});
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160127195923) do
+ActiveRecord::Schema.define(version: 20160212232505) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,12 +25,12 @@ ActiveRecord::Schema.define(version: 20160127195923) do
   create_table "collectionsdetails", force: :cascade do |t|
     t.integer "collection_id"
     t.integer "magiccard_id"
-    t.integer "condition_id"
+    t.integer "condition_id",  default: 1
     t.text    "language",      default: "EN",  null: false
     t.boolean "foil",          default: false
     t.boolean "signed",        default: false
     t.boolean "altered",       default: false
-    t.integer "amount",        default: 0,     null: false
+    t.integer "amount",        default: 1,     null: false
   end
 
   add_index "collectionsdetails", ["collection_id"], name: "FKI_collections_magiccards_collections", using: :btree
